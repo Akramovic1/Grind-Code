@@ -1,9 +1,8 @@
 public class SortColors_Medium {
     public void sortColors(int[] arr) {
-        int left = 0;
-        int right = arr.length - 1;
-        int i = 0;
-        while(i <= right && i < arr.length){
+        int left = 0, right = arr.length - 1;
+        // i<=right why? as right part is alerady sorted
+        for(int i = 0; i <= right;){
             if(arr[i] == 0)
                 swap(arr, i++, left++);
             else if(arr[i] == 2)
