@@ -1,7 +1,7 @@
 public class SortColors_Medium {
     public void sortColors(int[] arr) {
         int left = 0, right = arr.length - 1;
-        // i<=right why? as right part is alerady sorted
+        // i<=right why? as right part is already sorted
         for(int i = 0; i <= right;){
             if(arr[i] == 0)
                 swap(arr, i++, left++);
